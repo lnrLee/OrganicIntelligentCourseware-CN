@@ -1,6 +1,8 @@
 姓名：王昊天
+
 邮箱：wanght816@zju.edu.cn
 
+学号：11818172
 
 论文选题：Scalable training of artificial neural networks with adaptive sparse connectivity inspired by network science
 
