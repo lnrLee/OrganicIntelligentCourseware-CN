@@ -1,0 +1,5 @@
+Catastrophic cascade of failures in interdependent networks
+SV Buldyrev, R Parshani, G Paul, HE Stanley, S Havlin
+Nature 464, 08932
+
+https://arxiv.org/pdf/1012.0206.pdf
