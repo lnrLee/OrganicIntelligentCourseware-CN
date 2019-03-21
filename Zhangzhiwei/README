@@ -1,1 +1,19 @@
+Ruyue Xin, Jiang Zhang, and Yitong Shao. 2018. Complex Networks Classi-
+cation with Convolutional Neural Netowrk. In Proceedings of ACM KDD
+conference, London, United Kingdom, August 2018 (KDD’2018), 6 pages
 
+
+Abstract： 
+Classifying large-scale networks into several categories and distinguishing them according to their fine structures is of great importance with several applications in real life. However, most studies
+of complex networks focus on properties of a single network but
+seldom on classication, clustering, and comparison between different networks, in which the network is treated as a whole. Due
+to the non-Euclidean properties of the data, conventional methods
+can hardly be applied on networks directly. In this paper, we propose a novel framework of complex network classier (CNC) by
+integrating network embedding and convolutional neural network
+to tackle the problem of network classification. By training the
+classifier on synthetic complex network data and real international
+trade network data, we show CNC can not only classify networks
+in a high accuracy and robustness, it can also extract the features
+of the networks automatically.
+
+https://arxiv.org/pdf/1802.00539.pdf
