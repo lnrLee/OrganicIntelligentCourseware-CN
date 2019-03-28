@@ -10,7 +10,6 @@
 
 - 摘要
 
-'''
 Brain connectivity datasets comprise networks of brain regions connected by anatomical tracts or by
 functional associations. Complex network analysis—a new multidisciplinary approach to the study of
 complex systems—aims to characterize these brain networks with a small number of neurobiologically
@@ -22,4 +21,3 @@ resilience of networks to insult. We discuss the issues surrounding comparison o
 network connectivity, as well as comparison of networks across subjects. Finally, we describe a Matlab
 toolbox (http://www.brain-connectivity-toolbox.net) accompanying this article and containing a collection
 of complex network measures and large-scale neuroanatomical connectivity datasets.
-'''
