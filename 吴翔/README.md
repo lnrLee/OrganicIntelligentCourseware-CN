@@ -16,7 +16,7 @@ We propose and study a set of algorithms for discovering community structure in 
 
 - 正文
 
-本文解决的问题是社区发现(community detection)，模型是传统的图网络模型，图中的节点代表实体，边代表实体之间的联系。
+本文解决的问题是社区发现(community detection)，模型是传统的图网络模型，图中的节点代表实体，边代表实体之间的联系。一般认为社区应该具有的特征为社区内部联系紧密，反映到图中是一个边稠密图，社区之间联系松散，如果把一个社区当做一个节点的话，重新形成的图是边稀疏图。
 
 本文介绍的是一种采用层次聚类进行社交网络分析的技术。社区发现主要分为两种基本思想：
 
