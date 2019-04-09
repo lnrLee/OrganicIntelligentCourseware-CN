@@ -1,8 +1,8 @@
-王佳娜
+#王佳娜
 学号：21821112
 邮箱：cacyth@zju.edu.cn
 
-论文选题：Determining the Diameter of Small World Networks
+#论文选题：Determining the Diameter of Small World Networks
 
 Abstract：
 In this paper we present a novel approach to determine the exact diameter (longest shortest path length) of large graphs, 
@@ -15,7 +15,7 @@ We will show that our algorithm is able to quickly determine the exact diameter 
 small world networks with millions of nodes and hundreds of millions of links, whereas before only approximations 
 could be given.
 
-摘要：
+#摘要：
 
 本文提出了一种确定大图，特别是目前研究较多的小世界网络的精确直径(最长路径长度)的新方法。 典型的例子包括社会网络，基因网络，网络图和互联网拓扑网络。 
 由于复杂性问题，直径通常是基于图中一小部分节点的样本来计算的，或者应用一些近似演算法。 相反，我们提出了一个精确的算法，使用各种下界和上界，
