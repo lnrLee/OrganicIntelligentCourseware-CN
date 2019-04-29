@@ -5,7 +5,7 @@ import {
 import * as Sim from './sim';
 import * as Render from './render';
 
-const netNodes = generateRandomNodes(500, 600, 600);
+const netNodes = generateRandomNodes(1000, 600, 600);
 const netLinks = generateLinksFromNodes(netNodes, 45);
 
 let runningInfo: RunningInfo = null;
@@ -54,7 +54,7 @@ prepareBtn.onclick = async (e) => {
   runningInfo = Sim.generateRunningInfo(netNodes);
   (<any>prepareBtn).disabled = true;
   disableActBtns();
-  await Sim.initNetInfo(netNodes, runningInfo, 50);
+  await Sim.initNetInfo(netNodes, runningInfo, 1);
   console.log(netNodes);
   printToConsole('Finish preparing.');
   printToConsole('Finish selecting source node and sink nodes');
