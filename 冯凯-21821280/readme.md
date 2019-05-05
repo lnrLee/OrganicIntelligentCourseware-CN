@@ -1,4 +1,4 @@
-# 个人信息
+﻿# 个人信息
 - 姓名：冯凯
 - 学号：21821280
 - 主题：Complex Networks
@@ -7,7 +7,7 @@
 # 论文选择
 
 [RecurrentRelationalNetworks](https://arxiv.org/pdf/1711.08028.pdf)
-作者：Palm, Rasmus Berg，Paquet, Ulrich，Winther, Ole 
+- 作者：Palm, Rasmus Berg，Paquet, Ulrich，Winther, Ole 
 
 * **Abstract**
 >This paper is concerned with learning to solve tasks that require a chain of interdependent steps of relational inference, like answering complex questions about the relationships between objects, or solving puzzles where the smaller elements of a solution mutually constrain each other. We introduce the recurrent relational network, a general purpose module that operates on a graph representation of objects. As a generalization of Santoro et al. [2017]’s relational network, it can augment any neural network model with the capacity to do many-step relational reasoning. We achieve state of the art results on the bAbI textual question-answering dataset with the recurrent relational network, consistently solving 20/20 tasks. As bAbI is not particularly challenging from a relational reasoning point of view,we introduce Pretty-CLEVR, a new diagnostic dataset for relational reasoning. In the PrettyCLEVR set-up, we can vary the question to control for the number of relational reasoning steps that are required to obtain the answer. Using Pretty-CLEVR, we probe the limitations of multi-layer perceptrons, relational and recurrent relational networks. Finally, we show how recurrent relational networks can learn to solve Sudoku puzzles from supervised training data,a challenging task requiring upwards of 64 steps of relational reasoning. We achieve state-of-the-art results amongst comparable methods by solving 96.6% of the hardest Sudoku puzzles.
@@ -39,7 +39,8 @@ Adam Santoro和他的合作者提出了关系网（RN）。这是一个非常简
 
 ![quiz](img/quiz.png)
 
-解决
+##### 解决
+
 ![answer](img/answer.png)
 
 你不能一步步推断Sudoku的解决方案。它需要很多步骤的方法演绎，中间结果，并可能尝试几个部分的解决方案之前找到正确的。我们训练了一个RRN来解决Sudokus，通过考虑每个单元格的一个对象，这个对象影响到同一行、列和框中的每个其他单元格。我们没有告诉它任何策略，也没有提供任何其他的提示。神经网络学到了一个强大的策略，即使是最困难的数独也只有17个回应，成功率达到96.6％。为了比较，其他的神经网络结构并未能解决这些难题中的任何一个，尽管具有更多参数且被训练更长时间。在每个步骤，RRN为1-9个数字上的每个小区输出一个概率分布，表示网络认为应该在该小区中的哪个数字。
@@ -65,7 +66,7 @@ PrettyCLEVR诊断数据集的两个样本。每个样本都有128个相关问题
 本文提出了一个通用的关系推理模型，用于解决比当前技术水平更复杂的一个数量级的任务。babi和类似的clevr需要几步，pretty-clevr需要八步，数独需要十步以上。本文的关系推理模块可以添加到任何深度学习模型中，以增加强大的关系推理能力。本文得到了最先进的结果数独解决96.6%的最困难的数独与17 givens。还显著提高了babi数据集的先进性，在15次运行中的13次运行中解决20/20个任务，并对所有任务进行了联合培训。每一步都有损失的一个潜在问题是，它可能会鼓励网络学习陷入局部极小的贪婪算法。但是，输出函数r将节点隐藏状态和消息与输出概率分布分开。因此，网络有能力使用隐藏状态的一小部分来保留当前的最佳猜测，该猜测可以在几个步骤中保持不变，而隐藏状态的其他部分用于运行非贪婪的多步骤算法。并行发送所有节点的消息并汇总所有传入的消息可能看起来像是一种非物理性的方法，可能会导致非本地行为和淹没重要消息。但是，由于接收节点隐藏状态是消息函数的输入，因此接收节点在某种意义上可以确定希望接收哪些消息。因此，SUM可以看作是对传入消息的一种隐式注意机制。同样，网络可以根据接收和发送节点的历史和当前状态忽略消息，从而学习最佳消息传递计划。 
 
 
-#复现
+# 复现
 见src目录
 
 
