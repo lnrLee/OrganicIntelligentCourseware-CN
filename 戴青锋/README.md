@@ -31,19 +31,24 @@ of complex network measures and large-scale neuroanatomical connectivity dataset
 意味着脑网络的图结构是一个有向图。
 
 一般而言，脑复杂网络的表示方法为方阵（行、列的数量一致），其中行和列表示的是节点的数量，而矩阵的元素M<sub>ij</sub>代表的是节点i和节点j之间的连接强度（或相关性、因果性）。如下图所示,其表示的是一个包含12个节点的脑网络，从图中可以看到的是节点11到节点12之间是有连接的，但是节点12到节点11之间并没有连接，这说明该网络是个有向的网络。
-![脑复杂网络举例](./brain_network.png){:height="50%"width="50%"}
+<div align=center><img src="./brain_network.png" width="50%" height="50%" alt="脑网络举例"/></div>
 
 除此之外，还有功能性无向网络，如下图所示，可以看到的是该矩阵是对称的，即不管节点的顺序如何，两者之间的权重
 大小是相同的。其中暖色调的颜色表示的是正向的关联性，即前一节点会正向刺激后一节点；冷色调的颜色表示的是反向的
 关联性，即前一节点会抑制后一节点。
-![功能性无向网络举例](./functional_network.png)
+<div align=center><img src="./functional_network.png" width="50%" height="50%"></div>
 
 最后是有效性有向网络，如下图所示。该网络的矩阵表示是个非对称的矩阵，其在(i,j)处的权值的计算方式为将信息从节点i
-转移到j的信息熵的变化，因此M<sub>ij</sub>$和M<sub>ji</sub>$对应的权重是不同的。
-![有效性有向网络举例](./effective_network.png)
+转移到j的信息熵的变化，因此M<sub>ij</sub>和M<sub>ji</sub>对应的权重是不同的。
+<div align=center><img src="./effective_network.png" width="50%" height="50%"></div>
 
-在构建好网络
-
+在构建好网络后需要对此网络进行评估分析，但是直接从上述表示中很难获得直接有效的复杂网络信息，因此文章给出了一些测度（Measures）用于表示
+复杂网络的特征，下面是文章中给出的一些复杂网络测度。虽然这些测度是针对于脑网络的，但是仍然可以扩展到其他类型的复杂网络，例如社交网络等。
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+| 测度 | 0-1无向定义 | 权重有向定义 |
+|:------|:------|:------|
+|基本概念和标记|N是网络所有节点的集合，n是节点的数量，(i,j)则是节点i和j之间的连接，a<sub>ij</sub>是i和j之间的连接状态，当(i,j)存在时a<sub>ij</sub>=1，否则a<sub>ij</sub>=0|连接（i,j）之间的权重为w<sub>ij</sub>|
+|度：连接到某个节点的数量|\\(k_i=\sum a_{ij}\\)||
 
 
 
