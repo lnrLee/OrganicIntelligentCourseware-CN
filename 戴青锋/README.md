@@ -47,8 +47,7 @@ of complex network measures and large-scale neuroanatomical connectivity dataset
 | 测度 | 0-1无向定义 | 权重有向定义 |
 |:------|:------|:------|
 |基本概念和标记|N是网络所有节点的集合，n是节点的数量，(i,j)则是节点i和j之间的连接，a<sub>ij</sub>是i和j之间的连接状态，当(i,j)存在时a<sub>ij</sub>=1，否则a<sub>ij</sub>=0|连接（i,j）之间的权重为w<sub>ij</sub>|
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-|度：连接到某个节点的数量|\\(k_i=\sum a_{ij}\\)||
+|度：连接到某个节点的数量|||
 
 
 
